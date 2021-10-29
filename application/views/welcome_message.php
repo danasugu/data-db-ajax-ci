@@ -71,11 +71,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<h1>Retrieve Data From Database Using AJAX & in CI3</h1>
 	<div id='body'>
 			<button id="show">Show Cutomers</button>
+			<button id="close">close</button>
 			<div id="customers-list"></div>
 	</div>
 
-	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. 
-	<?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
+	<p class="footer"> 	 </p>
 </div>
 
 
@@ -90,6 +90,11 @@ $("#show").click(function() {
         }
     });
 });
+
+$('#close').on('click', function(){
+				$('#customers-list').hide();
+			});
+
 </script>
 
 </body>
