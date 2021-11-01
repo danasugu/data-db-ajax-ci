@@ -34,6 +34,7 @@ class Welcome extends CI_Controller {
     
         // set template
         $style = array('table_open'  => '<table class="table table-striped table-hover">');
+		
         $this->table->set_template($style);
     
         echo $this->table->generate($this->db->get('customers'));
