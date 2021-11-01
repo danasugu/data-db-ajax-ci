@@ -74,8 +74,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<button id="close">close</button>
 			<div id="customers-list"></div>
 	</div>
-
-	<p class="footer"> 	 </p>
+	<p class="footer"></p>
 </div>
 
 
